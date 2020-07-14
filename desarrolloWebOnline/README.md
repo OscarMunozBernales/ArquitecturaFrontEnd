@@ -20,3 +20,50 @@ Las tres tecnologías básicas que debe conocer y manejar un Frontend son:
 ## HTML
 
 ### DOM
+DOM es el acrónimo de Document Object Model o Modelo de documento, y es la manera en que se representa el contenido del documento, de manera similar a un árbol de nodos.
+A continuación, un ejemplo sencillo de la estructura del DOM:
+- html
+    - head
+        - title
+        - meta
+    - body
+        - header
+            - nav
+        - section
+        - article
+    - footer
+
+### Etiquetas HTML
+Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
+La sintaxis general de una etiqueta es:
+
+```html
+    <nombre>contenido</nombre>
+```
+
+Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas; es decir, no tienen etiqueta de cierre:
+
+```html
+    <nombre />
+```
+
+Algunas de las etiquetas más conocidas y usadas son:
+
+Etiquetas de cabecera (head):
+- doctype: indica al navegador el tipo de documento que se está mostrando
+- html: es la etiqueta que envuelve todo el documento
+- head: es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+
+Etiquetas del cuerpo del documento (body):
+- article: diferencia partes del contenido que pueden vivir por sí mismas
+- nav: para hacer menús de navegación.
+- aside: contenido menos relevante, como publicidad, etc.
+- section: sirve para diferenciar las secciones principales del contenido
+- header: cabecera del documento.
+- footer: pie de página del documento.
+- h1 - h6: títulos de nuestro sitio web.
+- table: tablas de contenidos, similar a la estructura de las hojas de calculo.
+- ul y ol: listas de items.
+- div: cualquier división para organizar el contenido.
+
+Existe una página en donde estan todas las etiquetas del html 5 para acceder a ella ve a [ALltags](https://allthetags.com/)
