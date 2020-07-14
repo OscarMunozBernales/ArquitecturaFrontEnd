@@ -15,3 +15,8 @@ Las tres tecnologías básicas que debe conocer y manejar un Frontend son:
 - HTML: es el lenguaje de marcado para hacer websites.
 - CSS: hojas de estilos cascada, el diseño hecho código.
 - JavaScript: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
+
+
+## HTML
+
+### DOM
