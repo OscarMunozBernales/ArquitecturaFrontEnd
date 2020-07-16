@@ -17,9 +17,9 @@ Las tres tecnologías básicas que debe conocer y manejar un Frontend son:
 - JavaScript: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
 
 
-## HTML
+## 2. HTML
 
-### DOM
+### 2.1. DOM
 DOM es el acrónimo de Document Object Model o Modelo de documento, y es la manera en que se representa el contenido del documento, de manera similar a un árbol de nodos.
 A continuación, un ejemplo sencillo de la estructura del DOM:
 - html
@@ -33,7 +33,7 @@ A continuación, un ejemplo sencillo de la estructura del DOM:
         - article
     - footer
 
-### Etiquetas HTML
+### 2.2. Etiquetas HTML
 Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
 La sintaxis general de una etiqueta es:
 
@@ -67,3 +67,82 @@ Etiquetas del cuerpo del documento (body):
 - div: cualquier división para organizar el contenido.
 
 Existe una página en donde estan todas las etiquetas del html 5 para acceder a ella ve a [ALltags](https://allthetags.com/)
+
+### 2.3. Estructura del sitio web
+La estructura html de nuestro proyecto usa una o más de las siguientes etiquetas:
+- **h1 a h6**: son etiquetas para indicar títulos con un estilo que destaca del resto.
+- **article**: es la parte de nuestro contenido que puede vivir por sí mismo. Pueden haber tantos artícle como proyectos o eventos tenga nuestro portafolio
+- **p**: define el texto de un párrafo.
+- **small**: aplica una apariencia de texto reducido en tamaño.
+- **strong**: aplica al texto un formato de negritas.
+- **a**: corresponde a un ancla o enlace a una url interna o externa del documento.
+- **img**: con esta etiqueta podemos enlazar imágenes en el documento.
+- **figure**: le da un contexto semántico a las imágenes.
+
+### 2.4. Atributos HTML
+Los atributos son valores agregados a las etiquetas (tags) html que extienden su habilidad o funcionalidad con información específica.
+A continuación, un ejemplo de los atributos más comunes y usados en algunas etiquetas:
+
+**Para img**:
+<pre>
+- <b>src</b>: específica la ruta de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser absoluta (cunado especifica una dirección exacta, incluyendo el prefijo http(s) ) o relativa (cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual).
+
+- <b>alt</b>: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
+- <b>width</b>: ancho de la imagen en pixeles.
+- <b>height</b>: alto de la imagen en pixeles.
+</pre>
+
+**Para link**, en la cabecera head del documento:
+<pre>
+- <b>rel</b>: indica la relación del recurso con el contenido.
+- <b>type</b>: indica el tipo de recurso / formato.
+- <b>href</b>: indica la ubicación (url) del recurso enlazado.
+</pre>
+**Para meta**, también en la cabecera head del documento:
+<pre>
+- <b>charset</b>: indica la tabla de caracteres (utf-8 para caracteres latinos) usada en el documento.
+</pre>
+**Para a**:
+<pre>
+- <b>href</b>: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
+</pre>
+
+Existe un generador de Favicons para tener máxima compatibilidad en navegadores y en accesos directos en escritorio.
+
+https://realfavicongenerator.net/
+
+### 2.5. Formularios de contactos
+Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos (en el frontend), y otra parte que se encarga de enviar, procesar y almacenar esos datos (en el backend).
+
+Los formularios se crean con la etiqueta form. El atributo principal de un formulario es action, ya que contiene la ruta a la que serán enviados los datos recolectados.
+
+Hay diversos elementos html que permiten la captura o recolección de datos, aunque generalmente se usan los elementos creados con la etiqueta input. Los inputs también sirven para crear botones, aunque existe una etiqueta especial para ésto llamada button… El atributo principal de los inputs es type, que indica el tipo de comportamiento o dato que se espera recibir.
+
+Los elementos creados con la etiqueta label muestran un texto que se puede asociar con un input para darle mayor significado al campo, principalmente cuando no se usa el atributo placeholder.
+
+```html
+<form>
+<label>Nombre</label>
+<input type="text" name="nombre" >
+</form>
+```
+
+### 2.6. Navegación entre las secciones
+En esta clase se mostró como hacer una navegacion interna sin js, solo con html. Pero existe la posibilidad de animar la navegación al hacer scroll con ANIMATE SCROLL.
+
+https://plugins.compzets.com/animatescroll/
+
+![asd](assets/AnimatingScroll.png)
+
+### 2.8. Formas de agregar CSS a HTML
+Hay tres opciones para incluir estilos que definan la apariencia de tu html:
+
+- Estilos en línea: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo style.
+- Estilos con el tag Style: regularmente este tag se incluye dentro de la etiqueta head del html.
+- Estilos enlazados desde un archivo css externo: utilizando la etiqueta link que nos permite enlazar recursos externos.
+
+A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se definen para una página, se van aplicando de arriba hacia abajo, y de lo más general a lo más particular, teniendo prioridad lo más particular. Esto es, los estilos que prevalecen son los que han sido definidos **en línea**, luego los que fueron definidos mediante la etiqueta **style** en la cabeza o cuerpo del html, y por último los estilos definidos en archivos externos enlazados con la etiqueta **link**. Esta prioridad se puede alterar al usar el modificador **!important"" en la definición de algún estilo en particular, aunque esto no es recomendado.
+
+Les dejo un sitio web que ofrece varias paletas de colores para que encuentren el color perfecto para su proyecto. 
+
+[flatuicolors.com](https://flatuicolors.com/)
