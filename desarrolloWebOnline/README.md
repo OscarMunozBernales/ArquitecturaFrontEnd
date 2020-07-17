@@ -146,3 +146,42 @@ A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se
 Les dejo un sitio web que ofrece varias paletas de colores para que encuentren el color perfecto para su proyecto. 
 
 [flatuicolors.com](https://flatuicolors.com/)
+
+### 2.7. Reglas, selectores, declaraciones, propiedades y valores CSS.
+
+![selectores](assets/selectoresCss.webp)
+
+- **Reglas**: Las reglas de css estan conformadas de selectores, declaraciones, propiedades y valores.
+- **Selectores**: Es la forma con la que vamos a diferenciar las etiquetas HTML de otras
+- **Declaraciones**: Es todo lo que hacemos con ese selector, definir color de fondo, align, background, borde, margen, etc.
+- **Propiedades**: Son las declaraciones particulares de cada selector.
+- **Valores**: generalmente se miden en px, em, etc, mientras que  en otras etiquetas son valores pre definidos.
+
+EJemplo:
+```css
+
+#selector { /* SELECTOR POR ID */
+    background-color: red;
+    margin: 10px;
+}
+
+.selector { /* SELECTOR POR CLASE */
+    background-color: red;
+    margin: 10px;
+}
+
+div#selector{
+    background-color: red;
+    margin: 10px;
+}
+
+
+
+```
+
+```html
+<div id="selector"></div>
+<div class="selector"></div>
+
+```
+
