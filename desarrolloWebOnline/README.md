@@ -307,3 +307,14 @@ Se puede centrar un elemento html colocándole el valor de margin: 0 auto, cuand
 
 ![margenes](assets/margenes.webp)
 
+### 3.7. Padding
+Así como el margen separa a los elementos html entre sí, la propiedad padding de relleno, permite definir una separación entre el contenido interno y el borde de un elemento.
+
+Al inspeccionar los elementos html en el navegador, se puede apreciar el margin con color naranja y el padding con color verde.
+
+Una forma de identificar cuándo es mejor usar margin o padding en un elemento, es evaluando la necesidad de usar borde o background, ya que son éstos: el borde y el background, los que realmente diferencian el uso de uno u otro.
+
+[Ejemplo rellenos](http://www.siteraw.com/html-css/how-to-create-a-website/css-box-model#margins)
+
+![margenes](assets/padding.webp)
+
