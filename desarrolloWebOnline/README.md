@@ -262,3 +262,36 @@ body{
 Ademas aquí vamos a dejar una imagen extraida en los comentarios del curso en platzi, los 10 tipos de fuentes mas usados en la web en los últimos 10 años.
 
 ![fuentes10anios](assets/fuentesTexto.webp)
+
+### 3.3. Propiedades para los textos 
+Además de todas las propiedades comunes que comparten los elementos estándar de html, como: display, position, margin, padding, top, left, right, bottom, border, etc., los elementos que admiten contenidos textuales aceptan una serie particular de propiedades entre las que se encuentran las siguientes:
+- **font-family**: define el tipo de fuente aplicado al texto.
+- **color**: define el colore del texto.
+- **line-height**: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+- **font-size**: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+- **letter-spacing**: define el espaciado entre las letras del texto.
+- **font-weight**: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+- **text-decoration**: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+- **text-transform**: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+
+### 3.4. Backgrounds de color e imagen
+Algunas de las propiedades de css relacionadas con la apariencia del fondo de los elementos son:
+
+- **background**: con la que se puede indicar un color, o usada de manera extendida, puede incluir color de fondo, url de la imagen, posición y modo de repetición de la imagen.
+- **background-image**: contiene la url que se usará como fondo del elemento.
+- **background-color**: indica el color de fondo, se puede usar en combinación con la imagen.
+- **background-size**: se puede indicar en valores de alto y ancho o en alguna de las palabras claves - permitidas: cover o contain.
+- **background-position**: indica la posición de la imagen dentro del elemento, puede indicarse en - unidades o en palabras claves como center, left, top y right.
+- **background-repeat**: indica el método de repetición de la imagen de fondo, puede ser: repeat, - repeat-x, repeat-y o no-repeat.
+
+### 3.5. Bordes
+
+Todos los elementos html admiten la propiedad de css border, que define la apariencia que tendrá el contorno del componente.
+El borde puede ser de muchos estilos, y al igual que las propiedades margin y padding que aprenderás más adelante, a los bordes se les puede colocar estilos tanto de forma general con la propiedad border, como de acuerdo al lado del elemento que se indique: border-top, border-right, border-bottom y border-left.
+
+Con la propiedad boder-radius se define el redondeado de las esquinas de los bordes.
+
+[Algunos ejemplos de bordes](http://www.siteraw.com/html-css/how-to-create-a-website/borders-shadows#borders)
+
+![Bordes](assets/borde.webp)
+
