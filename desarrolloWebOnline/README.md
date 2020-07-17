@@ -258,3 +258,7 @@ body{
 }
 
 ```
+
+Ademas aquí vamos a dejar una imagen extraida en los comentarios del curso en platzi, los 10 tipos de fuentes mas usados en la web en los últimos 10 años.
+
+![fuentes10anios](assets/fuentesTexto.webp)
