@@ -425,3 +425,14 @@ La propiedad de css que nos permite definir la forma en que se alinearán o dist
 - **space-around**: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
 
 ![ALineandoElementosDeFormaHorizontal](assets/flex-align.webp)
+
+### 3.12. Alineando elementos de forma vertical
+Similar a como sucede con justify-content, es posible alinear y distribuir los elementos internos en el espacio vertical disponible usando la propiedad align-items, que puede tomar también los valores de: flex-start, flex-end y center.
+
+Algo que es muy importante y se debe tener en cuenta a la hora de usar align-items y justify-content es que dependiendo de la propiedad flex-direction que se haya definido, el efecto de ambos se invierte, no en cuanto a sus elementos internos, sino en cuanto a si se debe usar uno u otro de manera vertical u horizontal.
+
+IMPORTANTE: Cuando la propiedad flex-direction se ha definido como column, la propiedad justify-content ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y align-items ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
+
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el valor center en ambas propiedades.
+
+![ALineandoElementosDeFormaVertical](assets/align-item.webp)
