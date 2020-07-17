@@ -412,3 +412,16 @@ Ejemplo:
 Resultado:
 
 ![flex](assets/flex.png)
+
+
+### 3.11. Alineando elementos de forma horizontal
+La propiedad de css que nos permite definir la forma en que se alinearán o distribuirán los hijos de un elemento al que se le ha asignado un display flex es: justify-content. Y puede tomar entre otros valores, los siguientes:
+
+- **flex-start**: para alinear todos los elementos hacia el inicio del espacio disponible.
+- **flex-end**: para alinear todos los elementos hacia el final, a la derecha.
+- **center**: para alinear todos los elementos al centro del espacio disponible.
+- **space-between**: para distribuir los elementos con un espacio proporcional e igual entre ellos.
+- **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y último elementos con respecto a los extremos del- espacio disponible).
+- **space-around**: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
+
+![ALineandoElementosDeFormaHorizontal](assets/flex-align.webp)
