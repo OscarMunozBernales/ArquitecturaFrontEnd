@@ -204,3 +204,57 @@ Con respecto a los valores hexadecimales, cada color está representado por 6 di
 - #0000FF es equivalente a Azul
 - #FFFFFF es equivalente a Blanco
 
+### 3.2. Tipos de textos personalizados
+Los tipos de texto, también conocidos como **tipos de letras o fuentes**, son el conjunto de diseños tipográficos que representan a cada una de las letras y los caracteres gráficos en el documento. Su nombre correcto es **tipografía**. Los diferentes tipos de fuente están basados en archivos que existen en cada sistema operativo.
+
+Algunos ejemplos de **tipos de texto** o fuentes, son:
+- Arial
+- Times New Roman
+- Verdana
+- DeJaVu
+- Lato
+- OpenSans
+- Roboto
+
+CSS permite utilizar **fuentes** diferentes a las disponibles en el sistema operativo del cliente mediante la importación o el enlace a archivos de fuentes externas. Las más usadas son las que están disponibles a través del sitio web de **Google Fonts.**
+
+Al definir el tipo de texto asociado a una clase css con la propiedad **font-family** indicamos al navegador que debe intentar usar esa fuente en particular para darle la apariencia tipográfica a los textos de ese elemento html.
+
+Aquí vamos a mostrar como agregar una fuente en css_
+```css
+body{
+    /* VA A BUSCAR UN ESTILO DE FUENTE ARIAL, SI NO LO ENCUENTRA VA A BUSCAR HELVETICA Y ASÍ SUCESIVAMENTE */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    /* SI EL ESTILO DE TEXTO TIENE MAS DE DOS PALABRAS SEPARADAS, TENDREMOS QUE AGREGAR COMILLAS */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+```
+
+Como incluir fuentes que no estan en nuestros sistemas:
+- Antes que todo, podemos visitar ![Google fonts](https://fonts.google.com/) y rescatar las fuentes que mas nos gusten y que esten gratis.
+- Seleccionamos la fuente y nos muestra dos formas de importar los estilos, una es mediante la etiqueta link y el otro es a travez de un import de css
+- Vamos a ocupar las dos
+
+```html
+<html>
+    <head>
+    ...
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    </head>
+</html>
+```
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+
+```
