@@ -1,0 +1,15 @@
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    /* VALORES ENTRE 0 Y 1 */
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 150px;
+}

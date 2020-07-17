@@ -327,3 +327,88 @@ En el modelo de caja, el ancho total de un elemento html equivale a la sumatoria
 Con la propiedad box-sizing, y en particular con el valor border-box de esta propiedad, podemos modificar el comportamiento del modelo de caja para que nuestro elemento nunca supere el tamaño máximo que le hayamos definido en width y height. Esta es la opción recomendada para trabajar.
 
 ![ModeloCaja](assets/modeloCaja.webp)
+
+### 3.9. Tipos de display
+Display es la propiedad de css que indica cómo debe ser mostrado un elemento html. Todos los elementos tienen algún tipo de display. Si un elemento no se ve en pantalla es porque seguramente su display es none.
+
+Los valores más comunes que puede recibir la propiedad display son:
+
+- **block**: el elemento intenta abarcar todo el ancho posible.
+- **inline**: reduce su tamaño exclusivamente hasta lo que abarca su contenido, descartando las propiedades width y height.
+- **inline-block**: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y height, pero coloca el elemento en línea (al costado) de elementos hermanos que también tengan display: inline o inline-block.
+- **flex**: asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.
+- **grid**: similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.
+- **none**: oculta el elemento.
+
+### 3.10. Propiedades de flexbox
+Flexbox se refiere al tipo de display en css que permite un manejo flexible de la alineación, dimensionamiento y distribución de elementos html.
+
+Esta propiedad se aplica a un elemento padre, pero va a afectar principalmente a sus elementos hijos directos. Por defecto, los elementos internos quedan alineados unos seguidos de los otros. El comportamiento del modelo de caja de estos elementos hijos también se ha modificado, ya que pierden el efecto de su propiedad margin.
+
+Los elementos hijos de un padre con propiedad display: flex tienen a su disposición algunas nuevas propiedades que aportan mayor flexibilidad a su comportamiento. Una de estas propiedades es flex-shrink que, junto a la propiedad flex-wrap del padre, permite adaptar y distribuir los elementos de manera dinámica en el espacio horizontal disponible hasta ocupar todo el espacio, y luego pasar a ocupar dinámicamente las siguiente filas hacia abajo.
+
+[Un juego entretenido para practicar flex](https://flexboxfroggy.com)
+
+Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+        <div class="box"><pre> class:box </pre></div>
+
+    </div>
+</body>
+
+</html>
+```
+
+```css
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    /* VALORES ENTRE 0 Y 1 */
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 150px;
+}
+```
+
+Resultado:
+
+![flex](assets/flex.png)
