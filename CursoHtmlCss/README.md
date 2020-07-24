@@ -4,6 +4,8 @@
 1. Internet.
     - ¿Cómo se contruye la tecnología web?
     - Comprendamos el internet
+2. Los básicos del web
+    - ¿Como funciona HTML?
 
 # 1. Internet.
 
@@ -35,3 +37,38 @@ Hay algunas computadoras que solo utilizamos para entregar documentos los conoce
 __La tecnología de la la información__ es la aplicación de ordenadores y equipos de telecomunicación para almacenar, recuperar, transmitir y manipular datos, con frecuencia, utilizado en el contexto de negocios o empresas.
 
 La __Comunicación Síncrona__ es comunicación en tiempo real, por ejemplo, en aplicaciones de mensajería y video-chat. Sin embargo, también existe la __Comunicación Asíncrona__, comunicación en tiempo NO real, así funciona Gmail, puede pasar que recibamos un nuevo correo pero no lo leemos inmediatamente lo envían, por eso es comunicación asíncrona.
+
+# Los básicos del web
+
+## ¿Como funciona HTML?
+El HTML es un **Markup Language** de ahi las siglas de HTML, HyperText Markup language.
+Sistema de marcas de hipertexto, se enfoca en la diferenciación y síntesis.
+
+La estructura básica del HTML es la siguiente:
+```html
+<html lang="en">
+    <head>
+        <!-- Etiquetas meta, script, css, etc. -->
+    </head>
+
+    <body>  
+        <!-- El cuerpe de la HTML -->
+    </body>
+
+</html>
+```
+
+![estructura-basica-html](assets/estructura-html.jpg)
+
+Las etiquetas comunes:
+```html
+<!-- Etiquetas -->
+<h1></h1> hasta la <h6></h6>
+
+<!-- Crear secciones o agrupar contenidos -->
+<div></div>
+
+<!-- Crear párrafos de texto -->
+<p></p>
+```
+
