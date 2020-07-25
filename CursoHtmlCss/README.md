@@ -6,6 +6,7 @@
     - Comprendamos el internet
 2. Los básicos del web
     - ¿Como funciona HTML?
+    - Etiquetas y sus atributos
 
 # 1. Internet.
 
@@ -38,9 +39,9 @@ __La tecnología de la la información__ es la aplicación de ordenadores y equi
 
 La __Comunicación Síncrona__ es comunicación en tiempo real, por ejemplo, en aplicaciones de mensajería y video-chat. Sin embargo, también existe la __Comunicación Asíncrona__, comunicación en tiempo NO real, así funciona Gmail, puede pasar que recibamos un nuevo correo pero no lo leemos inmediatamente lo envían, por eso es comunicación asíncrona.
 
-# Los básicos del web
+# 2. Los básicos del web
 
-## ¿Como funciona HTML?
+## 2.1. ¿Como funciona HTML?
 El HTML es un **Markup Language** de ahi las siglas de HTML, HyperText Markup language.
 Sistema de marcas de hipertexto, se enfoca en la diferenciación y síntesis.
 
@@ -72,3 +73,37 @@ Las etiquetas comunes:
 <p></p>
 ```
 
+## 2.2. Etiquetas y sus atributos
+
+Las **Etiquetas** son fragmentos de texto rodeados por corchetes angulares (< y >) con funciones y usos específicos:
+```html
+<html>Contenido</html>
+```
+
+Los **Atributos** afectan a los elementos por su presencia o enriquecen la definición de la misma. Por ejemplo, el atributo lang en la etiqueta html indica que el contenido de esta página esta en un idioma específico:
+
+```html
+<html lang=""es"">Contenido en Español</html>
+```
+
+Las etiquetas **meta** (meta tags) son etiquetas que se incorporan en el encabezado de una página web y son invisibles para los usuarios normales, sin embargo, son de gran utilidad para navegadores u otros programas que pueden valerse de esta información:
+```html
+<head>
+        <meta name=""description"" content=""Descripción de nuestra página"">
+</head>
+```
+
+También encontramos etiquetas comunes como 
+```html
+<footer> 
+```
+para agrupar el contenido del pie de página, 
+
+Para guardar texto genérico y sin reglas de espaciado o tamaño predeterminadas ocupamos span
+```html
+<span> 
+```
+Y para incluir imagenes ocupamos
+```html
+<img src="imagen-url.png">
+```
