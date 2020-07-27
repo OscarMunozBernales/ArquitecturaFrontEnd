@@ -161,3 +161,16 @@ En CSS utilizamos atributos para definir los estilos de nuestros elementos, pode
         padding: 20px;
 }
 ```
+
+## 2.4. ¿Cómo funciona JavaScript?
+JavaScript es un lenguaje de programación que nos permite realizar actividades complejas en nuestras páginas web: almacenar valores en variables o realizar operaciones.
+
+Para incluir JavaScript en nuestro HTML debemos utilizar la etiqueta script:
+```html
+<html>
+	<head>
+		<script src="script.js">
+		</script>
+	</head>
+</html>
+```
