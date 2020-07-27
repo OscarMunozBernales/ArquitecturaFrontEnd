@@ -107,3 +107,57 @@ Y para incluir imagenes ocupamos
 ```html
 <img src="imagen-url.png">
 ```
+
+## 2.3. ¿Cómo funciona CSS?
+Las hojas de estilos en cascada, definen la apariencia de nuestro HTML.
+Dentro de nuestro HTML llamamos a nuestro CSS con la siguiente etiqueta:
+```html
+<link rel="stylesheet" href="../ruta/parcial/archivo.css">
+<!-- O de la siguiente manera -->
+<style>
+    .caja{
+        /* atributos css */
+    }
+</style>
+```
+
+Los Selectores nos permiten conectar las etiquetas de HTML con sus respectivos estilos en CSS.
+Existen muchos tipos de selectores, por ejemplo, los selectores de clase buscan el contenido que tenga un cierto valor en su atributo **class**:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .caja{
+            color: red;
+        }
+    </style>
+</head>
+    <div class="caja">Contenido</div>
+</html>
+```
+
+También tenemos selectores de tipo ID (estos selectores solo pueden aplicar a un elemento, no va a funcionar si escribimos dos o más etiquetas con el mismo ID):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #caja{
+            color: red;
+        }
+    </style>
+</head>
+    <div id="caja">Contenido</div>
+</html>
+```
+
+En CSS utilizamos atributos para definir los estilos de nuestros elementos, podemos modificar el color de la letra, tamaño, color de fondo, espaciado, entre otras:
+```css
+.caja {
+        color: red;
+        background: yellow;
+        font-size: 10px;
+        padding: 20px;
+}
+```
