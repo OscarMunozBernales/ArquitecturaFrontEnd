@@ -188,4 +188,38 @@ Resultado
 Facilmente uno puedo ocupar la propiedad margin en los item's pero ocupar margin nos va a alterar el ancho y/o alto del elemento, mientras que el grap va hacer la separación 
 como corresponde, sin afectar el tamaño del item.
 
+## 1.6. Repetidores, unidades de medida y funciones
+
+**Unidad de medida**: fracciones fr distrubuye el espacio disponible en formas iguales.
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: 20% 50% 200px;
+    grid-template-rows: 300px 300px;
+    /* grid-template: filas / columnas */
+
+
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; /* LAS FRACCIONES VAN A DIVIDIR EL TOTAL DEL ANCHO EN 3 PARTES EN ESTE EJEMPLO */
+    grid-template: 1fr 1fr / 1fr 1fr; /* EN ESTE EJEMPLO LAS FRACCIONES SE VAN A DIVIDIR EN DOS, TODO ESTO VA A DEPENDER DE LA CANTIDAD DE COLUMNAS Y FILAS QUE QUERRAMOS AGREGAR AL GRID */
+
+
+    /*  */
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    gap: 10px 10px;
+}
+```
+Funciones:
+**repeat(cantidad, valor)** para usar el mismo valor varias veces
+**minmax(min, max)** agregar un valor minimo y maximo para el tamaño al hacer responsive
+
+```css
+.container{
+    ...
+    grid-template: 1fr 1fr 1fr / repeat( 4, minmax(300px, 1fr) );
+    ...
+}
+```
+
 
