@@ -1,7 +1,9 @@
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .box {
@@ -12,4 +14,11 @@
     flex-shrink: 0;
     text-align: center;
     line-height: 150px;
+}
+
+.box1 {
+    display: block;
+    height: 50px;
+    padding: 0 20px 20px 0;
+    margin: 10px 11px 12px
 }
