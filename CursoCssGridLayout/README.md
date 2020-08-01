@@ -93,3 +93,70 @@ body {
 
 Resultado:
 ![](assets/definiendo-filas.png)
+
+## 1.4. Grid identados y tipos de display
+Display subgrid para heredar la configuración del grid padre (cuando se esten anidando grids).
+Display inline-grid muestra el grid en una sola linea
+
+Ejemplo:
+
+```css
+body {
+    font-family: Arial;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 50% 200px;
+    grid-template-rows: 300px 300px;
+    /* grid-template: filas / columnas */
+    grid-template: 300px 100px 100px / 50% 100px 100px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.item:nth-of-type(4) {
+    background-color: blue;
+    overflow: auto;
+    /* display: subgrid;  LA GRACIA DE SUB GRID ES QUE HEREDA LA CONFIGURACIÓN DEL GRID PADRE PERO AUN NO ESTA IMPLEMENTADA*/
+    /* display: -moz-inline-grid; MUESTRA TODOS LOS GRID EN LINEA*/
+    display: grid;
+    grid-template: 50px 50px 5px / 200px 200px 200px;
+}
+
+.item .item {
+    background-color: yellow;
+}
+```
+
+```html
+<section class="container">
+    <div class="item">contenido #1</div>
+    <div class="item">contenido #2</div>
+    <div class="item">contenido #3</div>
+    <div class="item">
+        <div class="item">sub-item's #1</div>
+        <div class="item">sub-item's #2</div>
+        <div class="item">sub-item's #3</div>
+        <div class="item">sub-item's #4</div>
+        <div class="item">sub-item's #5</div>
+        <div class="item">sub-item's #6</div>
+    </div>
+    <div class="item">contenido #5</div>
+    <div class="item">contenido #6</div>
+    <div class="item">contenido #7</div>
+    <div class="item">contenido #8</div>
+    <div class="item">contenido #9</div>
+    <div class="item">contenido #10</div>
+    <div class="item">contenido #11</div>
+    <div class="item">contenido #12</div>
+</section>
+```
+
+Resultado:
+
+![sub-item](assets/sub-items.png)
