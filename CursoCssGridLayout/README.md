@@ -160,3 +160,32 @@ body {
 Resultado:
 
 ![sub-item](assets/sub-items.png)
+
+
+## 1.5. Espacio entre filas y columnas
+Para obtener espaciado entre las filas y columnas vamos a utilizar una propiedad llamada __grap__ ejemplo:
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: 20% 50% 200px;
+    grid-template-rows: 300px 300px;
+    /* grid-template: filas / columnas */
+    grid-template: 300px 100px 100px / 50% 100px 100px;
+    /*  */
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+
+
+    gap: 10px 10px; /*FILA COLUMNA*/
+}
+```
+
+Resultado
+
+![espaciado](assets/espaciado.png)
+
+Facilmente uno puedo ocupar la propiedad margin en los item's pero ocupar margin nos va a alterar el ancho y/o alto del elemento, mientras que el grap va hacer la separación 
+como corresponde, sin afectar el tamaño del item.
+
+
