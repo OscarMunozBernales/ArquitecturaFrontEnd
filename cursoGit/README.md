@@ -66,3 +66,6 @@ Recuerda que GitBash usa la ruta /c para dirigirse a C:\ (o /d para dirigirse a 
 Todos estos comandos tiene una función de autocompletado, o sea, puedes escribir la primera parte y presionar la tecla Tab para que la terminal nos muestre todas las posibles carpetas o comandos que podemos ejecutar. Si presionas la tecla Arriba puedes ver el último comando que ejecutamos.
 
 Recuerda que podemos descubrir todos los argumentos de un comando con el argumento --help (por ejemplo, cat --help).
+
+# 2. Comandos básicos de git
+## 2.1. ¿Qué es el staging y los repositorios? Ciclo básico de trabajo en Git
