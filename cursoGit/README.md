@@ -36,3 +36,29 @@ Tipos de archivos y sus diferencias:
 - **Archivos de Word (.docx)**: Podemos guardar imágenes y texto con diferentes tamaños, estilos o colores. Al abrirlo desde un editor de código podemos ver que es código binario, muy difícil de entender y muy diferente al texto al que estamos acostumbrados. Esto es porque Word está optimizado para entender este código especial y representarlo gráficamente.
 
 Recuerda que debes habilitar la opción de ver la extensión de los archivos, de lo contrario, solo podrás ver su nombre. La forma de hacerlo en Windows es Vista > Mostrar u ocultar > Extensiones de nombre de archivo.
+
+## 1.4. Introducción a la terminal y línea de comandos
+Diferencias entre la estructura de archivos de Windows, Mac o Linux.
+- La ruta principal en Windows es C:\, en UNIX es solo /.
+- Windows no hace diferencia entre mayúsculas y minúsculas pero UNIX sí.
+
+Recuerda que GitBash usa la ruta /c para dirigirse a C:\ (o /d para dirigirse a D:\) en Windows. Por lo tanto, la ruta del usuario con el que estás trabajando es **/c/Users/Nombre de tu usuario**
+
+**Comandos básicos en la terminal:**
+- pwd: Nos muestra la ruta de carpetas en la que te encuentras ahora mismo.
+- mkdir: Nos permite crear carpetas (por ejemplo, mkdir Carpeta-Importante).
+- touch: Nos permite crear archivos (por ejemplo, touch archivo.txt).
+- rm: Nos permite borrar un archivo o carpeta (por ejemplo, rm archivo.txt). Mucho cuidado con este comando, puedes borrar todo tu disco duro.
+- cat: Ver el contenido de un archivo (por ejemplo, cat nombre-archivo.txt).
+- ls: Nos permite cambiar ver los archivos de la carpeta donde estamos ahora mismo. Podemos usar uno o más argumentos para ver más información sobre estos archivos (los argumentos pueden ser -- + el nombre del argumento o - + una sola letra o shortcut por cada argumento).
+    - ls -a: Mostrar todos los archivos, incluso los ocultos.
+    - ls -l: Ver todos los archivos como una lista.
+    cd: Nos permite navegar entre carpetas.
+    - cd /: Ir a la ruta principal:
+    - cd o cd ~: Ir a la ruta de tu usuario
+    - cd carpeta/subcarpeta: Navegar a una ruta dentro de la carpeta donde estamos ahora mismo.
+    - cd .. (cd + dos puntos): Regresar una carpeta hacia atrás.
+    - Si quieres referirte al directorio en el que te encuentras ahora mismo puedes usar cd . (cd + un punto).
+- history: Ver los últimos comandos que ejecutamos y un número especial con el que podemos repetir su ejecución.
+- ! + número: Ejecutar algún comando con el número que nos muestra el comando history (por ejemplo, !72).
+- clear: Para limpiar la terminal. También podemos usar los atajos de teclado Ctrl + L o Command + L.
